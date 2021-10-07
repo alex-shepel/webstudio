@@ -1,0 +1,24 @@
+.address {
+	font-style: normal;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.address__logo {
+	display: inline-block;
+	color: var(--font-inversed-color);
+	padding-bottom: 10px;
+}
+
+.address__building {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: block;
+}
+
+.address__link {
+	display: block;
+	color: var(--font-trasnparent-color);
+	text-decoration: none;
+}

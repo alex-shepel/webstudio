@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="./favicon.ico" />
+
+	<!-- css -->
+	<link 
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+	/>
+	<link rel="stylesheet" href="./css/portfolio.min.css" />
+
+	<!-- fonts -->
+	<link 
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+	/>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="container page-header__container">
+			<nav class="site-nav">
+				<a class="logo site-nav__logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="./index.html">Студия</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
+						<div class="current-accent"></div>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="studio-contacts">
+				<li class="studio-contacts__item" lang="en">
+					<a class="studio-contacts__link" href="mailto:info@devstudio.com">
+						<svg class="studio-contacts__icon">
+							<use href="./images/icons.svg#envelope"></use>
+						</svg>
+						<span>info@devstudio.com</span>
+					</a>
+				</li>
+				<li class="studio-contacts__item">
+					<a class="studio-contacts__link" href="tel:+380991111111">
+						<svg class="studio-contacts__icon">
+							<use href="./images/icons.svg#smartphone"></use>
+						</svg>
+						<span>+38 099 111 11 11</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<section class="padding-unified">
+			<div class="container">
+				<h1 class="visually-hidden">Наполнение портфолио</h1>
+				<ul class="filter">
+					<li class="filter__item">
+						<button class="btn btn--secondary active" type="button">Все</button>
+					</li>
+					<li class="filter__item">
+						<button class="btn btn--secondary" type="button">Веб-сайты</button>
+					</li>
+					<li class="filter__item">
+						<button class="btn btn--secondary" type="button">Приложения</button>
+					</li>
+					<li class="filter__item">
+						<button class="btn btn--secondary" type="button">Дизайн</button>
+					</li>
+					<li class="filter__item">
+						<button class="btn btn--secondary" type="button">Маркетинг</button>
+					</li>
+				</ul>
+
+				<ul class="content">
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-technocrack.jpg" width="370"
+								alt='Главная страница сайта "Технокряк"' />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolores esse facere
+								facilis fuga illo
+								incidunt nemo neque non nulla odit? Assumenda hic ipsam magni numquam ratione repellat?
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Технокряк</h2>
+							<p class="content__type">Веб-сайт</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-basketball-poster.jpg" width="370"
+								alt="Баскетболисты борются за мяч" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate eligendi
+								iusto quo ratione!
+								Iste, laborum, maiores. Autem doloribus excepturi nam possimus ut! Reprehenderit.
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
+							<p class="content__type">Дизайн</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-restaurant.jpg" width="370"
+								alt="Название ресторана на фоне рыбы" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae doloremque esse
+								et non, unde?
+								Adipisci at neque odio. Aliquam beatae commodi ipsam sint!
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Ресторан <span lang="en">Seafood</span></h2>
+							<p class="content__type">Приложение</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-prime-project.jpg" width="370" alt="Музыкальные наушники" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum excepturi
+								explicabo
+								laudantium sint sunt, voluptates. Fugit illo magnam nihil qui rem similique totam!
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Проект <span lang="en">Prime</span></h2>
+							<p class="content__type">Маркетинг</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-boxes-project.jpg" width="370"
+								alt="Паковальные коробки разного размера" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus dignissimos
+								dolorum
+								eligendi mollitia, quasi repellendus saepe totam voluptatem voluptatibus! Aliquid atque
+								dolores
+								libero.
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Проект <span lang="en">Boxes</span></h2>
+							<p class="content__type">Приложение</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-inspiration.jpg" width="370"
+								alt="Веб-сайт на экране монитора" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus quod ut vero
+								voluptates? Ab
+								ad alias, deleniti labore magnam qui rerum. Earum, facilis!
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name" lang="en">Inspiration has no Borders</h2>
+							<p class="content__type">Веб-сайт</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-limited-edition.jpg" width="370"
+								alt="Разворот книги с картиками" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, cupiditate debitis
+								dolores est
+								reiciendis ut voluptatum? Aut eum modi nobis provident quam suscipit tempore!
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Издание <span lang="en">Limited Edition</span></h2>
+							<p class="content__type">Дизайн</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-lab-project.jpg" width="370"
+								alt="Этикетка с названием проекта" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus reprehenderit,
+								voluptate.
+								Accusantium dolore doloribus dolorum enim id impedit incidunt nisi, odio odit,
+								perferendis voluptatem?
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name">Проект <span lang="en">Lab</span></h2>
+							<p class="content__type">Проект</p>
+						</div>
+					</li>
+					<li class="content__item">
+						<div class="content__img-wrapper">
+							<img src="./images/portfolio-growing-business.jpg" width="370"
+								alt="Ноутбук с запущенным приложением" />
+							<p class="content__modal-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis consequuntur
+								deleniti dolorem
+								ducimus maiores natus nesciunt obcaecati, officia, placeat praesentium sapiente
+								veritatis
+								voluptatibus.
+							</p>
+						</div>
+						<div class="content__info">
+							<h2 class="content__name" lang="en">Growing Business</h2>
+							<p class="content__type">Приложение</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<h2 class="visually-hidden">Наши контакты</h2>
+
+			<address class="address">
+				<a class="logo address__logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
+				<p class="address__building">г. Киев, пр-кт Леси Украинки, 26</p>
+				<a class="address__link" href="mailto:info@example.com"> info@example.com </a>
+				<a class="address__link" href="tel:+380991111111"> +38 099 111 11 11 </a>
+			</address>
+
+			<div class="sm-contacts">
+				<h3 class="sm-contacts__title">Присоединяйтесь</h3>
+				<ul class="sm-contacts__list">
+					<li>
+						<a class="sm-contacts__link sm-contacts__link--studio" href="https://instagram.com/">
+							<svg height="20" width="20">
+								<use href="./images/icons.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="sm-contacts__link sm-contacts__link--studio" href="https://twitter.com/">
+							<svg height="20" width="20">
+								<use href="./images/icons.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="sm-contacts__link sm-contacts__link--studio" href="https://facebook.com/">
+							<svg height="20" width="20">
+								<use href="./images/icons.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a class="sm-contacts__link sm-contacts__link--studio" href="https://linkedin.com/">
+							<svg height="20" width="20">
+								<use href="./images/icons.svg#linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<form class="subscribe">
+				<h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+				<div class="subscribe__interaction">
+					<label><input class="subscribe__input" type="email" name="mail" placeholder="E-mail" /></label>
+					<button class="btn btn--primary subscribe__btn" type="submit">
+						<span>Подписаться</span>
+						<svg class="btn-confirm-icon" height="24" width="24">
+							<use href="./images/icons.svg#send"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div>
+	</footer>
+</body>
+
+</html>

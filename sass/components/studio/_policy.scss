@@ -1,0 +1,35 @@
+.policy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.policy__checkbox {
+	appearance: none;
+
+	&:checked ~ .policy__check-icon {
+		background-color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}
+
+.policy__check-icon {
+	margin-right: 8px;
+	height: 15px;
+	width: 16px;
+	border: 2px solid #000000;
+	border-radius: 2px;
+	background-image: url("../images/checkbox.svg");
+	background-size: contain;
+	background-origin: border-box;
+}
+
+.policy__label {
+	margin-right: 4px;
+}
+
+.policy__link {
+	color: var(--accent-color);
+}

@@ -1,0 +1,15 @@
+@import "./address";
+@import "../sm-contacts";
+@import "./subscribe";
+@import "../button";
+
+.footer {
+	padding: 60px 0;
+	color: var(--font-inversed-color);
+	background-color: var(--bg-black-color);
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+}

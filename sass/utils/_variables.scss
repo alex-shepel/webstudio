@@ -1,0 +1,31 @@
+:root {
+	--padding-section: 94px;
+	--grid-gap: 30px;
+
+	--accent-color: #2196f3;
+	--accent-focus-color: #0076d9;
+
+	--bg-white-color: #ffffff;
+	--bg-white-transparent-color: rgba(255, 255, 255, 0.1);
+	--bg-light-gray-color: #f5f4fa;
+	--bg-dark-gray-color: #c4c4c4;
+	--bg-black-color: #2f303a;
+
+	--border-color: #eeeeee;
+	--icons-primary-color: #afb1b8;
+
+	--font-bold-color: #212121;
+	--font-primary-color: #757575;
+	--font-inversed-color: #ffffff;
+	--font-trasnparent-color: rgba(255, 255, 255, 0.6);
+
+	--primary-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+	--anim-props: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	--features-cols: 4;
+	--job-cols: 3;
+	--team-cols: 4;
+	--clients-cols: 6;
+	--content-table-cols: 3;
+}

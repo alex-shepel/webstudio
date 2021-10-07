@@ -1,0 +1,32 @@
+.studio-contacts {
+	display: flex;
+	margin-top: 0;
+	margin-left: auto;
+	gap: 50px;
+}
+
+.studio-contacts__link {
+	display: flex;
+	gap: 10px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	color: var(--font-primary-color);
+	fill: var(--font-primary-color);
+	transition: color var(--anim-props), fill var(--anim-props);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		fill: var(--accent-color);
+	}
+}
+
+.studio-contacts__icon {
+	height: 16px;
+	width: 16px;
+}

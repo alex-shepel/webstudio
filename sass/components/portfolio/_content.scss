@@ -1,0 +1,75 @@
+@import "../../utils/mixins";
+
+.content {
+	margin-top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gap);
+}
+
+.content__item {
+	@include flex-based(var(--content-table-cols), var(--grid-gap));
+
+	&:hover,
+	&:focus {
+		box-shadow: var(--primary-shadow);
+		cursor: pointer;
+
+		.content__modal-text {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+.content__img-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.content__modal-text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 63px 24px;
+
+	height: 100%;
+	width: 100%;
+
+	color: var(--font-inversed-color);
+	font-size: 18px;
+	line-height: 1.6;
+
+	background-color: rgba(33, 150, 243, 0.9);
+	opacity: 0;
+	transform: translateY(100%);
+	transition: opacity var(--anim-props), transform var(--anim-props);
+}
+
+.content__info {
+	padding: 20px 24px;
+
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
+}
+
+.content__name {
+	margin-top: 0;
+	margin-bottom: 4px;
+
+	color: var(--font-bold-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.content__type {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.9;
+}

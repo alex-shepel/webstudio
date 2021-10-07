@@ -1,0 +1,26 @@
+@import "../../utils/mixins";
+
+.clients__list {
+	display: flex;
+	justify-content: center;
+	gap: var(--grid-gap);
+}
+
+.clients__icon {
+	@include flex-based(var(--clients-cols), var(--grid-gap));
+	height: 92px;
+	padding: 16px 0;
+
+	cursor: pointer;
+	text-align: center;
+	fill: var(--icons-primary-color);
+	border: 1px solid var(--icons-primary-color);
+	border-radius: 4px;
+	transition: border-color var(--anim-props), fill var(--anim-props);
+
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}

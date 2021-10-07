@@ -1,0 +1,17 @@
+@import "./teammate";
+@import "../../utils/mixins";
+
+.team {
+	background-color: var(--bg-light-gray-color);
+}
+
+.team__list {
+	display: flex;
+	gap: var(--grid-gap);
+}
+
+.team__item {
+	@include flex-based(var(--team-cols), var(--grid-gap));
+	background-color: var(--bg-white-color);
+	box-shadow: var(--primary-shadow);
+}

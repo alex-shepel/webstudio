@@ -1,0 +1,15 @@
+@import "../logo";
+@import "./site-nav";
+@import "./studio-contacts";
+
+.page-header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	border-bottom: 1px solid var(--border-color);
+}
+
+.page-header__container {
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,4 @@
+@mixin flex-based($cols, $gap) {
+	--total-gap: calc((#{$cols} - 1) * #{$gap});
+	flex-basis: calc((100% - var(--total-gap)) / #{$cols});
+}

@@ -1,0 +1,56 @@
+.service-order__label {
+	display: block;
+	cursor: pointer;
+}
+
+.service-order__input-wrapper {
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.service-order__input {
+	padding-left: 40px;
+	height: 40px;
+	width: 100%;
+	letter-spacing: 0.01em;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:focus-visible {
+		border-color: var(--accent-color);
+		outline: none;
+	}
+
+	&:focus-visible ~ .service-order__icon {
+		fill: var(--accent-color);
+	}
+}
+
+.service-order__input--textarea {
+	display: block;
+	margin-bottom: 20px;
+	resize: none;
+	padding: 12px 16px;
+	height: 120px;
+
+	&::placeholder {
+		color: rgba(117, 117, 117, 0.5);
+	}
+}
+
+.service-order__icon {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	height: 18px;
+	width: 18px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.service-order__send {
+	display: block;
+	margin: 0 auto;
+}
