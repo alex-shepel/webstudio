@@ -3,13 +3,8 @@
 @import "./studio-contacts";
 
 .page-header {
-	padding-top: 24px;
-	padding-bottom: 25px;
-
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: var(--viewport-min-width);
 	border-bottom: 1px solid var(--border-color);
-}
-
-.page-header__container {
-	display: flex;
-	align-items: center;
 }

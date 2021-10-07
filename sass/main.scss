@@ -1,25 +1,31 @@
+/* utilities */
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/padding-unified";
 
+/* base styles */
 @import "./base/reset-default";
 @import "./base/preset-body";
 @import "./base/preset-typograph";
 
+/* common components */
 @import "./components/container";
+@import "./components/button";
+@import "./components/sm-contacts";
+
+/* common sections */
 @import "./components/header/header";
 @import "./components/footer/footer";
-@import "./components/sm-contacts";
-@import "./components/button";
 
+/* main sections */
 @import "./components/studio/section-title";
 @import "./components/studio/hero";
-@import "./components/studio/features";
-@import "./components/studio/job";
+@import "./components/studio/job-features";
 @import "./components/studio/team";
 @import "./components/studio/clients";
 
-@import "./components/studio/backdrop";
-@import "./components/studio/modal";
-@import "./components/studio/service-order";
-@import "./components/studio/policy";
+/* modal window */
+// @import "./components/studio/backdrop";
+// @import "./components/studio/modal";
+// @import "./components/studio/service-order";
+// @import "./components/studio/policy";

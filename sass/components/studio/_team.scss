@@ -2,11 +2,13 @@
 @import "../../utils/mixins";
 
 .team {
+	min-width: var(--viewport-min-width);
 	background-color: var(--bg-light-gray-color);
 }
 
 .team__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: var(--grid-gap);
 }
 

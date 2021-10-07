@@ -1,15 +1,21 @@
 @import "../../utils/mixins";
 
+.clients {
+	min-width: var(--viewport-min-width);
+}
+
 .clients__list {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: var(--grid-gap);
 }
 
 .clients__icon {
 	@include flex-based(var(--clients-cols), var(--grid-gap));
 	height: 92px;
-	padding: 16px 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
 
 	cursor: pointer;
 	text-align: center;

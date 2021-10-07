@@ -4,12 +4,16 @@
 @import "../button";
 
 .footer {
-	padding: 60px 0;
+	min-width: var(--viewport-min-width);
 	color: var(--font-inversed-color);
 	background-color: var(--bg-black-color);
 }
 
 .footer__container {
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: calc(var(--grid-gap) * 2);
+	text-align: center;
 }

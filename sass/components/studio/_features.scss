@@ -1,11 +1,11 @@
 @import "../../utils/mixins";
 
 .features {
-	margin-bottom: var(--padding-section);
 }
 
 .features__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: var(--grid-gap);
 }
 
@@ -16,7 +16,8 @@
 .features__icon {
 	height: 120px;
 	width: 100%;
-	padding: 25px 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	margin-bottom: 30px;
 
 	background-color: var(--bg-light-gray-color);
@@ -24,7 +25,6 @@
 }
 
 .features__title {
-	margin-top: 0;
 	margin-bottom: 10px;
 
 	color: var(--font-bold-color);
@@ -32,8 +32,5 @@
 	font-size: 14px;
 	line-height: 1.2;
 	text-transform: uppercase;
-}
-
-.features__description {
-	margin: 0;
+	text-align: center;
 }
