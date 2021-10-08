@@ -2,9 +2,36 @@
 @import "./site-nav";
 @import "./studio-contacts";
 
-.page-header {
+.header {
+	display: flex;
+	align-items: center;
+
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-width: var(--viewport-min-width);
 	border-bottom: 1px solid var(--border-color);
+}
+
+.header__container {
+	justify-content: space-between;
+}
+
+.header__button {
+	cursor: pointer;
+	border: 0;
+	background-color: var(--bg-white-color);
+
+	&.is-open {
+		.header__close-icon {
+			display: block;
+		}
+
+		.header__menu-icon {
+			display: none;
+		}
+	}
+}
+
+.header__close-icon {
+	display: none;
 }

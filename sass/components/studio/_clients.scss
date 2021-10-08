@@ -12,6 +12,10 @@
 }
 
 .clients__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	@include flex-based(var(--clients-cols), var(--grid-gap));
 	height: 92px;
 	padding-top: 16px;

@@ -22,9 +22,9 @@
 	</head>
 
 	<body>
-		<header class="page-header">
-			<div class="container">
-				<!-- <nav class="site-nav"> -->
+		<header class="header">
+			<div class="container header__container">
+				<nav class="site-nav">
 					<a class="logo site-nav__logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
 					<!-- <ul class="site-nav__list">
 						<li class="site-nav__item">
@@ -37,8 +37,14 @@
 						<li class="site-nav__item">
 							<a class="site-nav__link" href="">Контакты</a>
 						</li>
-					</ul>
-				</nav> -->
+					</ul> -->
+					<button class="header__button" type="button" data-menu-button aria-expanded="false">
+						<svg class="header__svg" aria-label="Переключатель мобильного меню" height="40" width="40">
+							<use class="header__menu-icon" href="./images/icons.svg#menu-mobile"></use>
+							<use class="header__close-icon" href="./images/icons.svg#close-mobile"></use>
+						</svg>
+					</button>
+				</nav>
 
 				<!-- <ul class="studio-contacts">
 					<li class="studio-contacts__item" lang="en">
@@ -58,12 +64,9 @@
 						</a>
 					</li>
 				</ul> -->
-				<!-- <svg> -->
-					<!-- <use> -->
-						<!-- burger menu icon -->
-					<!-- </use> -->
-				<!-- </svg> -->
 			</div>
+
+			<script src="./js/mobile-menu.js"></script>
 		</header>
 
 		<main>
