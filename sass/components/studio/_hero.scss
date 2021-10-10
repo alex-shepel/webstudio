@@ -1,3 +1,7 @@
+@import "./modal";
+@import "./service-order";
+@import "./policy";
+
 .hero {
 	max-width: 480px;
 	min-width: var(--viewport-min-width);
@@ -12,7 +16,6 @@
 		url("../images/hero-bg-mobile.jpg");
 	background-position: center;
 	background-size: cover;
-	text-align: center;
 }
 
 .hero__title {
@@ -24,4 +27,8 @@
 	line-height: 1.6;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+}
+
+.hero__container {
+	text-align: center;
 }

@@ -1,10 +1,19 @@
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: block;
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	width: 480px;
-	padding: 0 15px;
+	padding: 0 var(--edge-margin);
+
+	@media screen and (max-width: 768px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1600px) {
+		width: 768px;
+	}
+
+	@media screen and (min-width: 1600px) {
+		width: 1600px;
+	}
 }
