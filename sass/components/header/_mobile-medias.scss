@@ -1,0 +1,16 @@
+.mobile-medias {
+	display: flex;
+	gap: 10px;
+}
+
+.mobile-medias__item + .mobile-medias__item {
+	padding-left: 10px;
+	border-left: 1px solid var(--bg-dark-gray-color);
+}
+
+.mobile-medias__link {
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}

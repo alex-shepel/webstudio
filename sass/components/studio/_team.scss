@@ -4,6 +4,7 @@
 .team {
 	min-width: var(--viewport-min-width);
 	background-color: var(--bg-light-gray-color);
+	padding: var(--padding-section) 0;
 }
 
 .team__list {

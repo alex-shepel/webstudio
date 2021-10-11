@@ -1,11 +1,26 @@
 .filter {
 	margin-top: 0;
-	margin-bottom: 50px;
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 	gap: 8px;
 	text-align: center;
 	transition: box-shadow var(--anim-props);
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 40px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1139px) {
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 1140px) {
+		margin-bottom: 50px;
+	}
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+	}
 }
 
 .filter__item {

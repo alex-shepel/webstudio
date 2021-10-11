@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/padding-unified";
 
 @import "./base/reset-default";
 @import "./base/preset-body";
@@ -12,5 +11,4 @@
 @import "./components/sm-contacts";
 @import "./components/button";
 
-@import "./components/portfolio/content";
-@import "./components/portfolio/filter";
+@import "./components/portfolio/main-section";

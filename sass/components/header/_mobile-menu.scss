@@ -4,21 +4,26 @@
 
 .mobile-menu {
 	position: fixed;
+	z-index: 1;
 	top: 0;
-	left: 0;
+	left: 50%;
 	display: flex;
 	flex-direction: column;
 	padding: 15px 15px 40px 48px;
 
-	width: 100vw;
-	height: 100vw;
+	width: 480px;
+	height: 100vh;
 
 	background-color: var(--bg-white-color);
 	transform: translateX(100%);
 	transition: transform var(--anim-props);
 
 	&.is-open {
-		transform: translateX(0);
+		transform: translateX(-50%);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
 	}
 }
 
@@ -34,4 +39,10 @@
 	&:focus {
 		fill: var(--accent-color);
 	}
+}
+
+.mobile-menu__contacts_medias {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
 }

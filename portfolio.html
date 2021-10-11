@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Portfolio</title>
 		<link rel="shortcut icon" href="./favicon.ico" />
 
@@ -20,47 +21,109 @@
 	</head>
 
 	<body>
-		<header class="page-header">
-			<div class="container page-header__container">
-				<nav class="modal-nav">
-					<a class="logo modal-nav__logo" href="./index.html"> <span class="logo__accent">Web</span>Studio </a>
-					<ul class="modal-nav__list">
-						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="./index.html">Студия</a>
+		<header class="header">
+			<div class="container header__container">
+				<a class="logo header__logo" href="./index.html"> <span class="logo__accent">Web</span>Studio</a>
+
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="./index.html">Студия</a>
 						</li>
-						<li class="modal-nav__item">
-							<a class="modal-nav__link modal-nav__link--current" href="./portfolio.html">Портфолио</a>
-							<div class="current-accent"></div>
+						<li class="main-nav__item">
+							<a class="main-nav__link main-nav__link--current" href="./portfolio.html">Портфолио</a>
 						</li>
-						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="">Контакты</a>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 
-				<ul class="studio-contacts">
-					<li class="studio-contacts__item" lang="en">
-						<a class="studio-contacts__link" href="mailto:info@devstudio.com">
-							<svg class="studio-contacts__icon">
+				<ul class="main-contacts">
+					<li class="main-contacts__item" lang="en">
+						<a class="main-contacts__link" href="mailto:info@devportfolio.com">
+							<svg class="main-contacts__icon">
 								<use href="./images/icons.svg#envelope"></use>
 							</svg>
-							<span>info@devstudio.com</span>
+							<span>info@devportfolio.com</span>
 						</a>
 					</li>
-					<li class="studio-contacts__item">
-						<a class="studio-contacts__link" href="tel:+380991111111">
-							<svg class="studio-contacts__icon">
+					<li class="main-contacts__item">
+						<a class="main-contacts__link" href="tel:+380991111111">
+							<svg class="main-contacts__icon">
 								<use href="./images/icons.svg#smartphone"></use>
 							</svg>
 							<span>+38 099 111 11 11</span>
 						</a>
 					</li>
 				</ul>
+
+				<button class="header__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+					<svg aria-label="Переключатель мобильного меню" height="40" width="40">
+						<use class="header__menu-icon" href="./images/icons.svg#menu-mobile"></use>
+					</svg>
+				</button>
+
+				<div class="mobile-menu js-menu-container" id="mobile-menu">
+					<button class="mobile-menu__button js-close-menu" type="button">
+						<svg aria-label="Переключатель мобильного меню" height="40" width="40">
+							<use class="mobile-menu__close-icon" href="./images/icons.svg#close-mobile"></use>
+						</svg>
+					</button>
+
+					<nav class="mobile-nav">
+						<ul class="mobile-nav__list">
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link" href="./index.html">Студия</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="mobile-nav__item">
+								<a class="mobile-nav__link" href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="mobile-menu__contacts_medias">
+						<ul class="mobile-contacts">
+							<li class="mobile-contacts__item">
+								<a class="mobile-contacts__phone" href="tel:+380991111111">+38 099 111 11 11</a>
+							</li>
+							<li class="mobile-contacts__item" lang="en">
+								<a class="mobile-contacts__mail" href="mailto:info@devportfolio.com">info@devportfolio.com</a>
+							</li>
+						</ul>
+
+						<ul class="mobile-medias">
+							<li class="mobile-medias__item">
+								<a class="mobile-medias__link" href="https://instagram.com/">Instagram</a>
+							</li>
+							<li class="mobile-medias__item">
+								<a class="mobile-medias__link" href="https://twitter.com/">Twitter</a>
+							</li>
+							<li class="mobile-medias__item">
+								<a class="mobile-medias__link" href="https://facebook.com/">Facebook</a>
+							</li>
+							<li class="mobile-medias__item">
+								<a class="mobile-medias__link" href="https://linkedin.com/">linkedin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
+
+			<script
+				defer
+				src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+				integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+				crossorigin="anonymous"
+			></script>
+			<script src="./js/mobile-menu.js"></script>
 		</header>
 
 		<main>
-			<section class="padding-unified">
+			<section class="main-section">
 				<div class="container">
 					<h1 class="visually-hidden">Наполнение портфолио</h1>
 					<ul class="filter">
@@ -84,7 +147,34 @@
 					<ul class="content">
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-technocrack.jpg" width="370" alt='Главная страница сайта "Технокряк"' />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/site-technocrack.jpg    1x,
+											./images/portfolio/mobile/site-technocrack@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/site-technocrack.jpg    1x,
+											./images/portfolio/tablet/site-technocrack@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/site-technocrack.jpg    1x,
+											./images/portfolio/desktop/site-technocrack@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/site-technocrack@2x.jpg"
+										alt='Главная страница сайта "Технокряк"'
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolores esse facere facilis fuga illo
 									incidunt nemo neque non nulla odit? Assumenda hic ipsam magni numquam ratione repellat?
@@ -97,7 +187,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-basketball-poster.jpg" width="370" alt="Баскетболисты борются за мяч" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/design-basketball.jpg    1x,
+											./images/portfolio/mobile/design-basketball@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/design-basketball.jpg    1x,
+											./images/portfolio/tablet/design-basketball@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/design-basketball.jpg    1x,
+											./images/portfolio/desktop/design-basketball@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/design-basketball@2x.jpg"
+										alt="Баскетболисты борются за мяч"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate eligendi iusto quo ratione!
 									Iste, laborum, maiores. Autem doloribus excepturi nam possimus ut! Reprehenderit.
@@ -110,7 +227,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-restaurant.jpg" width="370" alt="Название ресторана на фоне рыбы" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/app-seafood.jpg    1x,
+											./images/portfolio/mobile/app-seafood@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/app-seafood.jpg    1x,
+											./images/portfolio/tablet/app-seafood@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/app-seafood.jpg    1x,
+											./images/portfolio/desktop/app-seafood@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="teammate__photo"
+										src="./images/portfolio/mobile/app-seafood@2x.jpg"
+										alt="Название ресторана на фоне рыбы"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae doloremque esse et non, unde?
 									Adipisci at neque odio. Aliquam beatae commodi ipsam sint!
@@ -123,7 +267,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-prime-project.jpg" width="370" alt="Музыкальные наушники" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/marketing-prime.jpg    1x,
+											./images/portfolio/mobile/marketing-prime@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/marketing-prime.jpg    1x,
+											./images/portfolio/tablet/marketing-prime@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/marketing-prime.jpg    1x,
+											./images/portfolio/desktop/marketing-prime@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/marketing-prime@2x.jpg"
+										alt="Музыкальные наушники"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur earum excepturi explicabo
 									laudantium sint sunt, voluptates. Fugit illo magnam nihil qui rem similique totam!
@@ -136,7 +307,25 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-boxes-project.jpg" width="370" alt="Паковальные коробки разного размера" />
+								<picture>
+									<source
+										srcset="./images/portfolio/mobile/app-boxes.jpg 1x, ./images/portfolio/mobile/app-boxes@2x.jpg 2x"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="./images/portfolio/tablet/app-boxes.jpg 1x, ./images/portfolio/tablet/app-boxes@2x.jpg 2x"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="./images/portfolio/desktop/app-boxes.jpg 1x, ./images/portfolio/desktop/app-boxes@2x.jpg 2x"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/app-boxes@2x.jpg"
+										alt="Паковальные коробки разного размера"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid delectus dignissimos dolorum
 									eligendi mollitia, quasi repellendus saepe totam voluptatem voluptatibus! Aliquid atque dolores
@@ -150,7 +339,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-inspiration.jpg" width="370" alt="Веб-сайт на экране монитора" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/site-inspiration.jpg    1x,
+											./images/portfolio/mobile/site-inspiration@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/site-inspiration.jpg    1x,
+											./images/portfolio/tablet/site-inspiration@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/site-inspiration.jpg    1x,
+											./images/portfolio/desktop/site-inspiration@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/site-inspiration@2x.jpg"
+										alt="Веб-сайт на экране монитора"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus quod ut vero voluptates? Ab
 									ad alias, deleniti labore magnam qui rerum. Earum, facilis!
@@ -163,7 +379,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-limited-edition.jpg" width="370" alt="Разворот книги с картиками" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/design-limited-edition.jpg    1x,
+											./images/portfolio/mobile/design-limited-edition@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/design-limited-edition.jpg    1x,
+											./images/portfolio/tablet/design-limited-edition@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/design-limited-edition.jpg    1x,
+											./images/portfolio/desktop/design-limited-edition@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/design-limited-edition@2x.jpg"
+										alt="Разворот книги с картиками"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, cupiditate debitis dolores est
 									reiciendis ut voluptatum? Aut eum modi nobis provident quam suscipit tempore!
@@ -176,7 +419,34 @@
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-lab-project.jpg" width="370" alt="Этикетка с названием проекта" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/marketing-lab.jpg    1x,
+											./images/portfolio/mobile/marketing-lab@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/marketing-lab.jpg    1x,
+											./images/portfolio/tablet/marketing-lab@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/marketing-lab.jpg    1x,
+											./images/portfolio/desktop/marketing-lab@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/marketing-lab@2x.jpg"
+										alt="Этикетка с названием проекта"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus reprehenderit, voluptate.
 									Accusantium dolore doloribus dolorum enim id impedit incidunt nisi, odio odit, perferendis voluptatem?
@@ -184,12 +454,39 @@
 							</div>
 							<div class="content__info">
 								<h2 class="content__name">Проект <span lang="en">Lab</span></h2>
-								<p class="content__type">Проект</p>
+								<p class="content__type">Маркетинг</p>
 							</div>
 						</li>
 						<li class="content__item">
 							<div class="content__img-wrapper">
-								<img src="./images/portfolio-growing-business.jpg" width="370" alt="Ноутбук с запущенным приложением" />
+								<picture>
+									<source
+										srcset="
+											./images/portfolio/mobile/app-growing-business.jpg    1x,
+											./images/portfolio/mobile/app-growing-business@2x.jpg 2x
+										"
+										media="(max-width: 767px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/tablet/app-growing-business.jpg    1x,
+											./images/portfolio/tablet/app-growing-business@2x.jpg 2x
+										"
+										media="(min-width: 768px) and (max-width: 1139px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/desktop/app-growing-business.jpg    1x,
+											./images/portfolio/desktop/app-growing-business@2x.jpg 2x
+										"
+										media="(min-width: 1140px)"
+									/>
+									<img
+										class="content__photo"
+										src="./images/portfolio/mobile/app-growing-business@2x.jpg"
+										alt="Ноутбук с запущенным приложением"
+									/>
+								</picture>
 								<p class="content__modal-text">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis consequuntur deleniti dolorem
 									ducimus maiores natus nesciunt obcaecati, officia, placeat praesentium sapiente veritatis
@@ -206,7 +503,7 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer padding-unified">
 			<div class="container footer__container">
 				<h2 class="visually-hidden">Наши контакты</h2>
 
@@ -254,7 +551,9 @@
 				<form class="subscribe">
 					<h3 class="subscribe__title">Подпишитесь на рассылку</h3>
 					<div class="subscribe__interaction">
-						<label><input class="subscribe__input" type="email" name="mail" placeholder="E-mail" /></label>
+						<label class="subscribe__input-wrapper">
+							<input class="subscribe__input" type="email" name="mail" placeholder="E-mail" />
+						</label>
 						<button class="btn btn--primary subscribe__btn" type="submit">
 							<span>Подписаться</span>
 							<svg class="btn-confirm-icon" height="24" width="24">

@@ -1,5 +1,9 @@
 .service-order {
 	font-size: 12px;
+
+	@media screen and (min-width: 1140px) {
+		font-size: 14px;
+	}
 }
 
 .service-order__label {

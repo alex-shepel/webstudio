@@ -3,32 +3,73 @@
 @import "./policy";
 
 .hero {
-	max-width: 480px;
+	max-width: 100%;
 	min-width: var(--viewport-min-width);
 	height: 400px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 118px;
-	padding-bottom: 118px;
 
 	background-color: var(--bg-dark-gray-color);
-	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url("../images/hero-bg-mobile.jpg");
 	background-position: center;
 	background-size: cover;
+
+	@media screen and (max-width: 767px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/mobile/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/mobile/hero-bg@2x.jpg");
+		}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1139px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/tablet/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/tablet/hero-bg@2x.jpg");
+		}
+	}
+
+	@media screen and (min-width: 1140px) {
+		height: 600px;
+
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/desktop/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/desktop/hero-bg@2x.jpg");
+		}
+	}
 }
 
 .hero__title {
+	display: block;
 	margin-bottom: 30px;
 
 	color: var(--font-inversed-color);
 	font-weight: 900;
-	font-size: 26px;
 	line-height: 1.6;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+	@media screen and (max-width: 1139px) {
+		font-size: 26px;
+	}
+
+	@media screen and (min-width: 1140px) {
+		font-size: 44px;
+	}
 }
 
 .hero__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+	height: 100%;
 }

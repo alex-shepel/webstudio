@@ -1,13 +1,6 @@
 :root {
-	--padding-section: 60px;
 	--grid-gap: 30px;
 	--edge-margin: 15px;
-
-	--min-width-mobile: min-width: 480px;
-	--min-width-tablet: min-width: 768px;
-	--min-width-desktop: min-width: 1140px;
-	--max-width-mobile: max-width: calc(var(--min-width-tablet) - 1px);
-	--max-width-tablet: max-width: calc(var(--min-width-desktop) - 1px);
 
 	--accent-color: #2196f3;
 	--accent-focus-color: #0076d9;
@@ -30,11 +23,35 @@
 
 	--anim-props: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	--viewport-min-width: 480px;
+	@media screen and (max-width: 767px) {
+		--features-cols: 1;
+		--team-cols: 1;
+		--clients-cols: 2;
+		--content-table-cols: 1;
+	}
 
-	--features-cols: 1;
-	// --job-cols: 3;
-	--team-cols: 1;
-	--clients-cols: 2;
-	// --content-table-cols: 3;
+	@media screen and (min-width: 768px) and (max-width: 1139px) {
+		--features-cols: 2;
+		--team-cols: 2;
+		--clients-cols: 3;
+		--content-table-cols: 2;
+	}
+
+	@media screen and (min-width: 1140px) {
+		--features-cols: 4;
+		--job-cols: 3;
+		--team-cols: 4;
+		--clients-cols: 6;
+		--content-table-cols: 3;
+	}
+
+	@media screen and (max-width: 1139px) {
+		--padding-section: 60px;
+	}
+
+	@media screen and (min-width: 1140px) {
+		--padding-section: 94px;
+	}
+
+	// --viewport-min-width: 480px;
 }

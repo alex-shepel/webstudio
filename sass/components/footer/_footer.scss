@@ -7,13 +7,20 @@
 	min-width: var(--viewport-min-width);
 	color: var(--font-inversed-color);
 	background-color: var(--bg-black-color);
+	padding: var(--padding-section) 0;
 }
 
 .footer__container {
 	display: flex;
-	// justify-content: space-between;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: calc(var(--grid-gap) * 2);
-	text-align: center;
+
+	@media screen and (max-width: 1139px) {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: calc(var(--grid-gap) * 2);
+		text-align: center;
+	}
+
+	@media screen and (min-width: 1140px) {
+		justify-content: space-between;
+	}
 }

@@ -1,5 +1,13 @@
 @import "../../utils/mixins";
 
+.job {
+	margin-top: var(--padding-section);
+
+	@media screen and (max-width: 1139px) {
+		display: none;
+	}
+}
+
 .job__name {
 	position: absolute;
 	left: 0;
@@ -11,7 +19,6 @@
 
 	height: 70px;
 	width: 100%;
-	// min-width: var(--viewport-min-width);
 
 	color: var(--font-inversed-color);
 	font-weight: 700;
