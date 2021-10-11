@@ -1,10 +1,13 @@
-.studio-contacts {
+.main-contacts {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 	// display: flex;
 	// margin-left: auto;
 	// gap: 50px;
 }
 
-.studio-contacts__link {
+.main-contacts__link {
 	display: flex;
 	gap: 10px;
 
@@ -25,7 +28,7 @@
 	}
 }
 
-.studio-contacts__icon {
+.main-contacts__icon {
 	height: 16px;
 	width: 16px;
 }
