@@ -5,13 +5,13 @@
 	// 	display: none;
 	// }
 
-	@media screen and (min-width: 768px) and (max-width: 1139px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 	}
 
-	@media screen and (min-width: 1140px) {
+	@media screen and (min-width: 1200px) {
 		display: flex;
 		align-items: center;
 		gap: 30px;
@@ -37,11 +37,11 @@
 		fill: var(--accent-color);
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1139px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		font-size: 12px;
 	}
 
-	@media screen and (min-width: 1140px) {
+	@media screen and (min-width: 1200px) {
 		font-size: 14px;
 	}
 }

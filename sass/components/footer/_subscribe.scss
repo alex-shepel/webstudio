@@ -1,7 +1,7 @@
 .subscribe {
 	width: 100%;
 
-	@media screen and (min-width: 1140px) {
+	@media screen and (min-width: 1200px) {
 		width: 570px;
 	}
 }
@@ -20,7 +20,7 @@
 	align-items: center;
 	gap: 20px;
 
-	@media screen and (min-width: 1140px) {
+	@media screen and (min-width: 1200px) {
 		flex-direction: row;
 	}
 }
