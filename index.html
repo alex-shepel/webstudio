@@ -11,7 +11,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
-		<link rel="stylesheet" href="./css/main.min.css" />
 		<link rel="stylesheet" href="./css/index.min.css" />
 
 		<!-- fonts -->
@@ -98,16 +97,24 @@
 
 						<ul class="mobile-medias">
 							<li class="mobile-medias__item">
-								<a class="mobile-medias__link" href="https://instagram.com/">Instagram</a>
+								<a class="mobile-medias__link" href="https://instagram.com/" aria-label="ссылка на инстаграм аккаунт"
+									>Instagram</a
+								>
 							</li>
 							<li class="mobile-medias__item">
-								<a class="mobile-medias__link" href="https://twitter.com/">Twitter</a>
+								<a class="mobile-medias__link" href="https://twitter.com/" aria-label="ссылка на твиттер аккаунт"
+									>Twitter</a
+								>
 							</li>
 							<li class="mobile-medias__item">
-								<a class="mobile-medias__link" href="https://facebook.com/">Facebook</a>
+								<a class="mobile-medias__link" href="https://facebook.com/" aria-label="ссылка на фейсбук аккаунт"
+									>Facebook</a
+								>
 							</li>
 							<li class="mobile-medias__item">
-								<a class="mobile-medias__link" href="https://linkedin.com/">linkedin</a>
+								<a class="mobile-medias__link" href="https://linkedin.com/" aria-label="ссылка на линкедин аккаунт"
+									>linkedin</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -251,7 +258,12 @@
 										srcset="./images/studio/desktop/job-desktop.jpg 1x, ./images/studio/desktop/job-desktop@2x.jpg 2x"
 										media="(min-width: 1200px)"
 									/>
-									<img src="./images/studio/desktop/job-desktop.jpg" alt="Пример десктопного приложения" />
+									<img
+										src="./images/studio/desktop/job-desktop.jpg"
+										alt="Пример десктопного приложения"
+										width="370"
+										height="294"
+									/>
 								</picture>
 								<h3 class="job__name">Десктопные приложения</h3>
 							</li>
@@ -261,7 +273,12 @@
 										srcset="./images/studio/desktop/job-mobile.jpg 1x, ./images/studio/desktop/job-mobile@2x.jpg 2x"
 										media="(min-width: 1200px)"
 									/>
-									<img src="./images/studio/desktop/job-mobile.jpg" alt="Пример мобильного приложения" />
+									<img
+										src="./images/studio/desktop/job-mobile.jpg"
+										alt="Пример мобильного приложения"
+										width="370"
+										height="294"
+									/>
 								</picture>
 								<h3 class="job__name">Мобильные приложения</h3>
 							</li>
@@ -271,7 +288,12 @@
 										srcset="./images/studio/desktop/job-tablet.jpg 1x, ./images/studio/desktop/job-tablet@2x.jpg 2x"
 										media="(min-width: 1200px)"
 									/>
-									<img src="./images/studio/desktop/job-tablet.jpg" alt="Пример планшетного приложения" />
+									<img
+										src="./images/studio/desktop/job-tablet.jpg"
+										alt="Пример планшетного приложения"
+										width="370"
+										height="294"
+									/>
 								</picture>
 								<h3 class="job__name">Дизайнерские решения</h3>
 							</li>
@@ -302,7 +324,13 @@
 										"
 										media="(min-width: 1200px)"
 									/>
-									<img class="teammate__photo" src="./images/studio/mobile/teammate-ihor.jpg" alt="фото Игоря" />
+									<img
+										class="teammate__photo"
+										src="./images/studio/mobile/teammate-ihor.jpg"
+										width="450"
+										height="460"
+										alt="фото Игоря"
+									/>
 								</picture>
 								<div class="teammate__info">
 									<h3 class="teammate__name">Игорь Демьяненко</h3>
@@ -310,28 +338,44 @@
 									<div class="sm-contacts">
 										<ul class="sm-contacts__list">
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://instagram.com/"
+													aria-label="ссылка на инстаграм аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#instagram"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://twitter.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://twitter.com/"
+													aria-label="ссылка на твиттер аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#twitter"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://facebook.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://facebook.com/"
+													aria-label="ссылка на фейсбук аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#facebook"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://linkedin.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://linkedin.com/"
+													aria-label="ссылка на линкедин аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#linkedin"></use>
 													</svg>
@@ -360,7 +404,13 @@
 										"
 										media="(min-width: 1200px)"
 									/>
-									<img class="teammate__photo" src="./images/studio/mobile/teammate-olha.jpg" alt="фото Ольги" />
+									<img
+										class="teammate__photo"
+										src="./images/studio/mobile/teammate-olha.jpg"
+										width="450"
+										height="460"
+										alt="фото Ольги"
+									/>
 								</picture>
 								<div class="teammate__info">
 									<h3 class="teammate__name">Ольга Репина</h3>
@@ -368,28 +418,44 @@
 									<div class="sm-contacts">
 										<ul class="sm-contacts__list">
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://instagram.com/"
+													aria-label="ссылка на инстаграм аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#instagram"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://twitter.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://twitter.com/"
+													aria-label="ссылка на твиттер аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#twitter"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://facebook.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://facebook.com/"
+													aria-label="ссылка на фейсбук аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#facebook"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://linkedin.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://linkedin.com/"
+													aria-label="ссылка на линкедин аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#linkedin"></use>
 													</svg>
@@ -424,7 +490,13 @@
 										"
 										media="(min-width: 1200px)"
 									/>
-									<img class="teammate__photo" src="./images/studio/mobile/teammate-nikolay.jpg" alt="фото Николая" />
+									<img
+										class="teammate__photo"
+										src="./images/studio/mobile/teammate-nikolay.jpg"
+										width="450"
+										height="460"
+										alt="фото Николая"
+									/>
 								</picture>
 								<div class="teammate__info">
 									<h3 class="teammate__name">Николай Тарасов</h3>
@@ -432,28 +504,44 @@
 									<div class="sm-contacts">
 										<ul class="sm-contacts__list">
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://instagram.com/"
+													aria-label="ссылка на инстаграм аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#instagram"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://twitter.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://twitter.com/"
+													aria-label="ссылка на твиттер аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#twitter"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://facebook.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://facebook.com/"
+													aria-label="ссылка на фейсбук аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#facebook"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://linkedin.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://linkedin.com/"
+													aria-label="ссылка на линкедин аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#linkedin"></use>
 													</svg>
@@ -469,10 +557,10 @@
 								<picture>
 									<source
 										srcset="
-											./images/studio/mobile/teammate-mihail.jpg    1x,
-											./images/studio/mobile/teammate-mihail@2x.jpg 2x
+											./images/studio/desktop/teammate-mihail.jpg    1x,
+											./images/studio/desktop/teammate-mihail@2x.jpg 2x
 										"
-										media="(max-width: 767px)"
+										media="(min-width: 1200px)"
 									/>
 									<source
 										srcset="
@@ -483,12 +571,18 @@
 									/>
 									<source
 										srcset="
-											./images/studio/desktop/teammate-mihail.jpg    1x,
-											./images/studio/desktop/teammate-mihail@2x.jpg 2x
+											./images/studio/mobile/teammate-mihail.jpg    1x,
+											./images/studio/mobile/teammate-mihail@2x.jpg 2x
 										"
-										media="(min-width: 1200px)"
+										media="(max-width: 767px)"
 									/>
-									<img class="teammate__photo" src="./images/studio/mobile/teammate-mihail.jpg" alt="фото Михаила" />
+									<img
+										class="teammate__photo"
+										src="./images/studio/mobile/teammate-mihail.jpg"
+										width="450"
+										height="460"
+										alt="фото Михаила"
+									/>
 								</picture>
 								<div class="teammate__info">
 									<h3 class="teammate__name">Михаил Ермаков</h3>
@@ -496,28 +590,44 @@
 									<div class="sm-contacts">
 										<ul class="sm-contacts__list">
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://instagram.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://instagram.com/"
+													aria-label="ссылка на инстаграм аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#instagram"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://twitter.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://twitter.com/"
+													aria-label="ссылка на твиттер аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#twitter"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://facebook.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://facebook.com/"
+													aria-label="ссылка на фейсбук аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#facebook"></use>
 													</svg>
 												</a>
 											</li>
 											<li>
-												<a class="sm-contacts__link sm-contacts__link--personal" href="https://linkedin.com/">
+												<a
+													class="sm-contacts__link sm-contacts__link--personal"
+													href="https://linkedin.com/"
+													aria-label="ссылка на линкедин аккаунт"
+												>
 													<svg height="20" width="20">
 														<use href="./images/icons.svg#linkedin"></use>
 													</svg>
@@ -586,28 +696,44 @@
 					<h3 class="sm-contacts__title">Присоединяйтесь</h3>
 					<ul class="sm-contacts__list">
 						<li>
-							<a class="sm-contacts__link sm-contacts__link--studio" href="https://instagram.com/">
+							<a
+								class="sm-contacts__link sm-contacts__link--studio"
+								href="https://instagram.com/"
+								aria-label="ссылка на инстаграм аккаунт"
+							>
 								<svg height="20" width="20">
 									<use href="./images/icons.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="sm-contacts__link sm-contacts__link--studio" href="https://twitter.com/">
+							<a
+								class="sm-contacts__link sm-contacts__link--studio"
+								href="https://twitter.com/"
+								aria-label="ссылка на твиттер аккаунт"
+							>
 								<svg height="20" width="20">
 									<use href="./images/icons.svg#twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="sm-contacts__link sm-contacts__link--studio" href="https://facebook.com/">
+							<a
+								class="sm-contacts__link sm-contacts__link--studio"
+								href="https://facebook.com/"
+								aria-label="ссылка на фейсбук аккаунт"
+							>
 								<svg height="20" width="20">
 									<use href="./images/icons.svg#facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="sm-contacts__link sm-contacts__link--studio" href="https://linkedin.com/">
+							<a
+								class="sm-contacts__link sm-contacts__link--studio"
+								href="https://linkedin.com/"
+								aria-label="ссылка на линкедин аккаунт"
+							>
 								<svg height="20" width="20">
 									<use href="./images/icons.svg#linkedin"></use>
 								</svg>
