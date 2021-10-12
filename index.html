@@ -130,11 +130,11 @@
 						Эффективные решения <br />
 						для вашего бизнеса
 					</h1>
-					<button class="btn btn--primary" data-modal-open type="button">Заказать услугу</button>
+					<button class="btn btn--primary" aria-controls="modal" data-modal-open type="button">Заказать услугу</button>
 				</div>
 
 				<div class="backdrop is-hidden" data-modal>
-					<div class="modal">
+					<div class="modal" id="modal">
 						<h2 class="modal__title">Оставьте данные и мы перезвоним</h2>
 
 						<form class="service-order">
@@ -179,7 +179,7 @@
 							<button class="btn btn--primary service-order__send" type="submit">Отправить</button>
 						</form>
 
-						<button class="modal__close" type="button" data-modal-close>
+						<button aria-label="Закрытие модального окна" class="modal__close" type="button" data-modal-close>
 							<svg height="18" width="18">
 								<use href="./images/icons.svg#form-close"></use>
 							</svg>
